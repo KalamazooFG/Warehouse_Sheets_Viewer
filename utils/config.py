@@ -1,0 +1,10 @@
+import os
+
+SPREADSHEET_ID = ' << YOUR WORKBOOK URL ID HERE >> '
+RANGE_NAME = '  << YOUR SHEET NAME HERE >> '
+OUTPUT_CSV_PATH = '  << PATH TO CONTENT LOG CSV >> '
+CREDS_PATH = '  << PATH TO CREDENTIAL FILE - JSON FORMAT >> '
+REFRESH_RATE = int(os.getenv('REFRESH_RATE', '3000'))
+RETRY_DELAY = int(os.getenv('RETRY_DELAY', '10'))
+DATA_CACHE_EXPIRY = 60  # Cache expiry in seconds
+
